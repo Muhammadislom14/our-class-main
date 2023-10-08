@@ -19,20 +19,36 @@
 body {
     font-family: sans-serif;
 }
+
 /* NAVBAR */
 
+#navbar-hr {
+    box-shadow:  0px 0px 2px gray;
+    margin-top: 10px;
+}
+
 .navbar {
-    background-color: var(--feldgrau);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--feldgrau);
+    padding-top: 20px;
 }
 .class-name__logo a {
+    display: inline-block;
     transition: 0.3s;
+}
+.class-name__logo a::after {
+    background-color: var(--feldgrau);
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    transition: width 0.3s;
 }
 .class-name {
     display: inline-block;
 }
 .class-name a {
-    color: var(--white);
+    color: var(--feldgrau);
     cursor: pointer;
     font-size: 40px;
     text-decoration: none;
@@ -48,15 +64,21 @@ body {
     display: inline-block;
     list-style: none;
     padding: 13.5px 10px;
-    transition: 0.3s;   
 }
-.class-item a:hover,
-.class-name__logo a:hover {
-    color: var(--battle-ship);
-    transition: 0.3s;
+.class-item a::after {
+    background-color: var(--feldgrau);
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    transition: width 0.3s;
+}
+.class-item a:hover::after,
+.class-name__logo a:hover::after {
+    width: 75%;
 }
 .class-item a {
-    color: var(--white);
+    color: var(--feldgrau);
     text-decoration: none;
     transition: 0.3s;
 }
