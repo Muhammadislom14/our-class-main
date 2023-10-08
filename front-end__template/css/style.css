@@ -82,3 +82,59 @@ body {
     text-decoration: none;
     transition: 0.3s;
 }
+
+/* MAIN-SECTION */
+.latest-new-link {
+    text-decoration: none;
+}
+.latest-new {
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    transition: 0.3s;
+    width: 69.5%;
+}
+.latest-new:hover {
+    box-shadow: 0 0 15px var(--black);
+    transition: 0.3s;
+}
+
+.latest-new__img {
+    width: 100%;
+}
+.latest-new__title {
+    color: var(--black);
+    font-size: 30px;
+    margin: 10px 0;
+}
+.latest-new__text {
+    color: var(--battle-ship);
+}
+
+.other-new {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.other-news-link {
+    text-decoration: none;
+}
+.other-new__img {
+    width: 100%;
+}
+.other-new__title {
+    color: var(--black);
+    float: right;
+    width: 100%;
+}
+.other-new:hover {
+    box-shadow: 0 0 15px var(--black);
+    transition: 0.3s;
+}
