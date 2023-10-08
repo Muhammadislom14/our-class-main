@@ -138,3 +138,19 @@ body {
     box-shadow: 0 0 15px var(--black);
     transition: 0.3s;
 }
+
+/* FOOTER  */
+
+.footer {
+    display: block;
+    margin-top: 1100px;
+    bottom: 0;
+}
+.footer__hr {
+    display: block;
+}
+.footer__text {
+    color: var(--ash-grey);
+    margin: 5px;
+    text-align: center;
+}
